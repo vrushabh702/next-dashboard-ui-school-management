@@ -1,0 +1,229 @@
+// teachersData
+
+
+{
+  "id": 1,
+  "teacherId": "1234567890",
+  "name": "John Doe",
+  "email": "john@doe.com",
+  "photo": "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  "phone": "1234567890",
+  "subjects": ["Math", "Geometry"],
+  "classes": ["1B", "2A", "3C"],
+  "address": "123 Main St, Anytown, USA"
+}
+
+{
+  "id": "number",          // Integer: unique identifier for the teacher
+  "teacherId": "string",   // String: unique teacher ID
+  "name": "string",        // String: teacher's full name
+  "email": "string",       // String: teacher's email address
+  "photo": "string",       // String: URL of the teacher's photo
+  "phone": "string",       // String: teacher's phone number
+  "subjects": ["array"],   // Array of strings: list of subjects the teacher teaches
+  "classes": ["array"],    // Array of strings: list of classes the teacher handles
+  "address": "string"      // String: teacher's address
+}
+
+
+// studentsData
+
+{
+  "id": "number",          // Integer: unique identifier for the student
+  "studentId": "string",   // String: unique student ID
+  "name": "string",        // String: student's full name
+  "email": "string",       // String: student's email address
+  "photo": "string",       // String: URL of the student's photo
+  "phone": "string",       // String: student's phone number
+  "grade": "number",       // Integer: grade level of the student
+  "class": "string",       // String: class the student is in (e.g., "5A")
+  "address": "string"      // String: student's address
+}
+
+{
+  "id": 1, 
+  "studentId": "1234567890", 
+  "name": "John Doe", 
+  "email": "john@doe.com", 
+  "photo": "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200", 
+  "phone": "1234567890", 
+  "grade": 5, 
+  "class": "1B", 
+  "address": "123 Main St, Anytown, USA"
+}
+
+// parentsData
+
+{
+  "id": 1, 
+  "name": "John Doe", 
+  "students": ["Sarah Brewer"], 
+  "email": "john@doe.com", 
+  "phone": "1234567890", 
+  "address": "123 Main St, Anytown, USA"
+}
+
+{
+  "id": "number",        // Unique identifier for the parent (integer)
+  "name": "string",      // Full name of the parent (string)
+  "students": ["array"], // List of students' names associated with this parent (array of strings)
+  "email": "string",     // Email address of the parent (string)
+  "phone": "string",     // Phone number of the parent (string)
+  "address": "string"    // Physical address of the parent (string)
+}
+
+// subjectsData 
+
+{
+  "id": 1, 
+  "name": "Math", 
+  "teachers": ["Alice Phelps", "Russell Davidson"]
+}
+
+{
+  "id": "number",         // Unique identifier for the subject (integer)
+  "name": "string",       // Name of the subject (string)
+  "teachers": ["array"]   // List of teachers' names associated with this subject (array of strings)
+}
+
+// classesData
+
+{
+  "id": 1, 
+  "name": "1A", 
+  "capacity": 20, 
+  "grade": 1, 
+  "supervisor": "Joseph Padilla"
+}
+
+{
+  "id": "number",        // Unique identifier for the class (integer)
+  "name": "string",      // Name of the class (string)
+  "capacity": "number",  // Maximum number of students in the class (integer)
+  "grade": "number",     // Grade level of the class (integer)
+  "supervisor": "string" // Name of the class supervisor (string)
+}
+
+// lessonsData
+
+{
+  "id": 1, 
+  "subject": "Math", 
+  "class": "1A", 
+  "teacher": "Tommy Wise"
+}
+
+{
+  "id": "number",        // Unique identifier for the lesson (integer)
+  "subject": "string",   // Subject name (string)
+  "class": "string",     // Class associated with the lesson (string)
+  "teacher": "string"    // Name of the teacher conducting the lesson (string)
+}
+
+// examsData
+{
+  "id": 1, 
+  "subject": "Math", 
+  "class": "1A", 
+  "teacher": "Martha Morris", 
+  "date": "2025-01-01"
+}
+
+{
+  "id": "number",        // Unique identifier for the exam (integer)
+  "subject": "string",   // Subject of the exam (string)
+  "class": "string",     // Class associated with the exam (string)
+  "teacher": "string",   // Name of the teacher supervising the exam (string)
+  "date": "string"       // Date of the exam (string in YYYY-MM-DD format)
+}
+
+// assignmentsData
+{
+  "id": 1, 
+  "subject": "Math", 
+  "class": "1A", 
+  "teacher": "Anthony Boone", 
+  "dueDate": "2025-01-01"
+}
+
+{
+  "id": "number",        // Unique identifier for the assignment (integer)
+  "subject": "string",   // Subject of the assignment (string)
+  "class": "string",     // Class associated with the assignment (string)
+  "teacher": "string",   // Name of the teacher assigning the task (string)
+  "dueDate": "string"    // Due date for the assignment (string in YYYY-MM-DD format)
+}
+
+// resultsData
+
+{
+  "id": 1,
+  "subject": "Math",
+  "class": "1A",
+  "teacher": "John Doe",
+  "student": "John Doe",
+  "date": "2025-01-01",
+  "type": "exam",
+  "score": 90
+}
+
+{
+  "id": "number",        // Unique identifier for the result (integer)
+  "subject": "string",   // Subject of the result (string)
+  "class": "string",     // Class associated with the result (string)
+  "teacher": "string",   // Name of the teacher for the subject (string)
+  "student": "string",   // Name of the student (string)
+  "date": "string",      // Date of the result (string in YYYY-MM-DD format)
+  "type": "string",      // Type of result (e.g., "exam") (string)
+  "score": "number"      // Score obtained by the student (integer)
+}
+
+// eventsData
+
+{
+  "id": 1,
+  "title": "Lake Trip",
+  "class": "1A",
+  "date": "2025-01-01",
+  "startTime": "10:00",
+  "endTime": "11:00"
+}
+
+{
+  "id": "number",      // Unique identifier for the event (e.g., 1)
+  "title": "string",   // The title or name of the event (e.g., "Lake Trip")
+  "class": "string",   // The class associated with the event (e.g., "1A")
+  "date": "string",    // The date of the event in YYYY-MM-DD format (e.g., "2025-01-01")
+  "startTime": "string", // The start time of the event in HH:MM format (e.g., "10:00")
+  "endTime": "string"  // The end time of the event in HH:MM format (e.g., "11:00")
+}
+
+// announcementsData
+{
+  "id": 1,
+  "title": "About 4A Math Test",
+  "class": "4A",
+  "date": "2025-01-01"
+}
+
+{
+  "id": "number",      // Unique identifier for the announcement (e.g., 1)
+  "title": "string",   // The title of the announcement (e.g., "About 4A Math Test")
+  "class": "string",   // The class associated with the announcement (e.g., "4A")
+  "date": "string"     // The date of the announcement in YYYY-MM-DD format (e.g., "2025-01-01")
+}
+
+// calendarEvents
+{
+  "title": "Math",
+  "allDay": false,
+  "start": "2024-08-12T08:00:00.000Z",
+  "end": "2024-08-12T08:45:00.000Z"
+}
+
+{
+  "title": "string", 
+  "allDay": "boolean", 
+  "start": "Date", 
+  "end": "Date"
+}
